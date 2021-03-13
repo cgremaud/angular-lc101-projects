@@ -6,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
    styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
-   movies = ['Toy Story', 'The Shining', 'Sleepless in Seattle', 'The Martian'];
+   movies = ['Toy Story', 'The Shining', 'Sleepless in Seattle', 'The Martian', 'Butt Sluts 96'];
+   brands = [
+      {
+         name: "Gucci", 
+         url: "https://www.gucci.com/us/en/"
+      },
+      {
+         name: "Nestle",
+         url: "https://nestle.com"
+      }
+   ]
 
    constructor() { }
 

@@ -1,8 +1,13 @@
+<!-- so two classes separated by a space calls the rules for both classes -->
 <div class='movies col-4'>
-    <h3>Movies to Watch</h3>
-    <ol>
-       <li *ngFor ="let movie of movies">{{movie}}</li>
-    </ol>
-    <hr>
+   <h3>Movies to Watch</h3>
+   <ol>
+      <li *ngFor ="let movie of movies">{{movie}}</li>
+   </ol>
+   <h3>Some other crap no one likes</h3>
+   <ol>
+      <li *ngFor = "let brand of brands"><a href ="{{brand.url}}">{{brand.name}}</a></li>
+   </ol>
+   <hr>
 
- </div>
+</div>
