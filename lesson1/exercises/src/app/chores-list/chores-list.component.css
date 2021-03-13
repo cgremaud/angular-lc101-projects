@@ -1,0 +1,18 @@
+.chores {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: blanchedalmond;
+    background-color: blue;
+    margin: auto;
+    width: 30%;
+    padding: 20px;
+
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+ul {
+    font-style: italic;
+}

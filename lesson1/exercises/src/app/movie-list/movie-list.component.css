@@ -1,0 +1,16 @@
+.movies{
+    color: wheat;
+    background-color: rgb(226, 126, 126);
+    font-size: 18px;
+    padding: 10px;
+}
+
+h3{
+    text-align: center;
+    color: rgb(123, 177, 238);
+    background-color: aliceblue;
+}
+
+ol {
+    color: antiquewhite;
+}
