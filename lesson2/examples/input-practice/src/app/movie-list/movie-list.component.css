@@ -15,10 +15,6 @@
     text-align: center;
  }
 
-
- li {
-    /* color: white; */
- }
  li:hover {
     color:cyan;
     text-decoration: underline;
