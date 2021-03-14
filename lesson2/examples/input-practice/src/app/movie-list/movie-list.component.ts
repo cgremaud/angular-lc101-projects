@@ -30,9 +30,13 @@ export class MovieListComponent implements OnInit {
    }
 
    addBrand(brandName: string, brandURL: string){
-      this.brands.push({
-        name: brandName,
-        url: brandURL
-      })
+      if (brandURL === "" || !brandURL.includes("http")) {
+         alert("Must include valid URL")
+      } else {
+         this.brands.push({
+         name: brandName,
+         url: brandURL
+         })
+      }
    }
 }
