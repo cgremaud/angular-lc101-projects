@@ -12,7 +12,7 @@
         <li *ngFor = 'let done of finishedChores'>{{done}}</li>
     </ul>
 </div>
-<span *ngIf = "chores.length === 0 || finishedChores.length - 2  > chores.length; else noAllowance" >
+<span *ngIf = "chores.length === 0 || finishedChores.length - 3  >= chores.length; else noAllowance" >
     <img src = {{targetImage}}><p>Allowance Earned</p>
     <hr>
 </span>
