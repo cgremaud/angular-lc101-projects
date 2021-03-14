@@ -15,13 +15,6 @@
     text-align: center;
  }
 
- a {
-    color: purple;
- }
-
- a:hover{
-    color: green;
- }
 
  li {
     /* color: white; */

@@ -2,7 +2,7 @@
 <div class = "movies">
    <h3>Movies to Watch</h3>
    <ol>
-      <li *ngFor ="let movie of movies">{{movie}}</li>
+      <li  *ngFor ="let movie of movies">{{movie}}</li>
    </ol>
    <input #newMovie (keyup.enter) = 'addMovie(newMovie.value); newMovie.value = ""' type='text' placeholder="Enter Movie Title Here"/> &nbsp;
    <button (click) = "addMovie(newMovie.value); newMovie.value = ''">Add</button>
