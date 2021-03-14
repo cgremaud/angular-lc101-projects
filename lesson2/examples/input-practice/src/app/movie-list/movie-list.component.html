@@ -12,10 +12,11 @@
    <h3>Some other crap no one likes</h3>
    <ol>
       <li *ngFor = "let brand of brands"><a href ="{{brand.url}}">{{brand.name}}</a></li>
-      <p>{{newBrand.value}}</p>
+     
    </ol>
    <input #newBrand (keyup.enter) = 'true' type='text' placeholder="Enter Brand Title Here"/> &nbsp;
-   <button (click) = "true">Add</button>
+   <input #newBrandUrl (keyup.enter) = 'true' type='text' placeholder="Enter Brand URL Here"/> &nbsp;
+   <button (click) = "addBrand(newBrand.value, newBrandUrl.value)">Add</button>
    <hr>
 
 </div>

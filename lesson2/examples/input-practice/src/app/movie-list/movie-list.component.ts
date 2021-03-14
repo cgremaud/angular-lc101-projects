@@ -28,4 +28,11 @@ export class MovieListComponent implements OnInit {
    addMovie (newTitle: string) {
       this.movies.push(newTitle)
    }
+
+   addBrand(brandName: string, brandURL: string){
+      this.brands.push({
+        name: brandName,
+        url: brandURL
+      })
+   }
 }
