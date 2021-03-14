@@ -7,15 +7,3 @@
    <input #newMovie (keyup.enter) = 'addMovie(newMovie.value); newMovie.value = ""' type='text' placeholder="Enter Movie Title Here"/> &nbsp;
    <button (click) = "addMovie(newMovie.value); newMovie.value = ''">Add</button>
 </div>
-<!-- <div class = "links col-4">
-   <h3>Some other crap no one likes</h3>
-   <ol>
-      <li *ngFor = "let brand of brands"><a href ="{{brand.url}}">{{brand.name}}</a></li>
-     
-   </ol>
-   <input #newBrand type='text' placeholder="Enter Title Here"/> &nbsp;
-   <input #newBrandUrl (keyup.enter) = 'addBrand(newBrand.value, newBrandUrl.value); newBrandUrl.value = ""; newBrand.value = ""' type='text' placeholder="Enter URL Here"/> &nbsp;
-   <button (click) = "addBrand(newBrand.value, newBrandUrl.value)">Add</button>
-   <hr>
-
-</div> -->
