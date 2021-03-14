@@ -9,3 +9,16 @@
  .center {
     text-align: center;
  }
+
+ a {
+    color: purple;
+ }
+
+ a:hover{
+    color: green;
+ }
+
+ li:hover {
+    color:green;
+    text-decoration: underline;
+ }
