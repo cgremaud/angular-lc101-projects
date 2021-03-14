@@ -11,9 +11,6 @@ export class ChoresComponent implements OnInit {
       {title: "Today's Chores", tasks: ['Wallow in filth', 'Elate the lord', 'Spray defensive chemicals']},
       {title: "Tomorrow's Chores", tasks: ['Allay fears', 'boil sinners in oil', 'praise jeebus']}
    ]
-   
-   
-   todoTitles = ["Yesterday's Chores", "Today's Chores", "Tomorrow's Chores"];
 
    constructor() { }
 

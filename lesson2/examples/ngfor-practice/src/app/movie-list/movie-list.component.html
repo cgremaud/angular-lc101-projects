@@ -1,4 +1,4 @@
-<div class='movies'>
+<div class='movies' *ngIf ="movies.length > 3; else needMoreMovies">
     <h3>Movies to Watch</h3>
     <ol>
         <li *ngFor = 'let movie of movies'>{{movie}}</li>
@@ -6,3 +6,9 @@
     <hr>
 </div>
 
+<ng-template #needMoreMovies>
+    <div class = 'movies'>
+        <h3>Not enough movies!</h3>
+        <p>You only have {{movies.length}} movie!</p>
+    </div>
+</ng-template>
