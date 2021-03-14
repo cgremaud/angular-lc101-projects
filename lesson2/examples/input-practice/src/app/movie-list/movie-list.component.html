@@ -3,11 +3,19 @@
    <h3>Movies to Watch</h3>
    <ol>
       <li *ngFor ="let movie of movies">{{movie}}</li>
+      
    </ol>
+   <input #newMovie (keyup.enter) = 'addMovie(newMovie.value)' type='text' placeholder="Enter Movie Title Here"/> &nbsp;
+   <button (click) = "addMovie(newMove.value)">Add</button>
+   
+   
    <h3>Some other crap no one likes</h3>
    <ol>
       <li *ngFor = "let brand of brands"><a href ="{{brand.url}}">{{brand.name}}</a></li>
+      <p>{{newBrand.value}}</p>
    </ol>
+   <input #newBrand (keyup.enter) = 'true' type='text' placeholder="Enter Brand Title Here"/> &nbsp;
+   <button (click) = "true">Add</button>
    <hr>
 
 </div>

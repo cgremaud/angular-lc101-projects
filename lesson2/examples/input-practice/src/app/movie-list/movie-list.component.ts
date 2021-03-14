@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
    styleUrls: ['./movie-list.component.css']
 })
 export class MovieListComponent implements OnInit {
-   movies = ['Toy Story', 'The Shining', 'Sleepless in Seattle', 'The Martian', 'Butt Sluts 96'];
+   movies = ['Toy Story', 'The Shining', 'Sleepless in Seattle', 'The Martian'];
    brands = [
       {
          name: "Gucci", 
@@ -19,7 +19,13 @@ export class MovieListComponent implements OnInit {
    ]
 
    constructor() { }
+ 
 
    ngOnInit() {
+   }
+
+     
+   addMovie (newTitle: string) {
+      this.movies.push(newTitle)
    }
 }
