@@ -26,8 +26,8 @@ export class MovieListComponent implements OnInit {
 
      
    addMovie (newTitle: string) {
-      if (newTitle === ""){
-         alert("Please enter a title")
+      if (newTitle === "" || this.movies.includes (newTitle)){
+         alert("Please enter a unique title")
       } else {
       this.movies.push(newTitle)
       }

@@ -1,12 +1,14 @@
 .movies {
    padding: 20px;
    margin: auto;
+   background-color: white;
+   color: black;
 }
 
  
  h3 {
     text-align: center;
-    color:white;
+    /* color:white; */
  }
 
  .center {
@@ -22,7 +24,7 @@
  }
 
  li {
-    color: white;
+    /* color: white; */
  }
  li:hover {
     color:cyan;
