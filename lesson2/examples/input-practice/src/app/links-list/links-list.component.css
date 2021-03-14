@@ -4,9 +4,14 @@
 }
 
 h3 {
-    color: white
+    color: white;
+    text-align: center;
 }
 
 a {
-    color: rgb(123, 186, 241);
+    color: rgb(135, 190, 238);
+}
+
+a:hover {
+    color: cyan;
 }

@@ -25,6 +25,6 @@
     color: white;
  }
  li:hover {
-    color:green;
+    color:cyan;
     text-decoration: underline;
  }
