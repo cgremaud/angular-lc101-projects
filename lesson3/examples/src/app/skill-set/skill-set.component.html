@@ -6,7 +6,7 @@
    <hr>
    <h3>Copy of skills list</h3>
    <ol [style.color]= "alternateColor" [type] = "bulletType">
-      <li [style.text-decoration] = "underlineOn"  [style.color] = "alternateColor" *ngFor="let skill of skills">{{skill}}</li>
+      <li  [style.color] = "alternateColor" *ngFor="let skill of skills">{{skill}}</li>
    </ol>
    <hr>
    <div *ngIf = 'addOtherList; else otherListA'> 
@@ -14,7 +14,7 @@
          <li *ngFor = "let item of otherList">{{item}}</li>
       </ol>
    </div>
-   <p [class.p-style] = "!changeColor" (mouseover) = "changeColor = !changeColor">Here is some practice text...</p>
+   <p [class.p-style] = "!changeColor" (mouseenter) = "changeColor = true" (mouseout) = "changeColor = false">Here is some practice text...</p>
 </div>
 
 <ng-template #otherListA>

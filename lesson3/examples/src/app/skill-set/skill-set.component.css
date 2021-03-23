@@ -17,3 +17,7 @@ h3 {
    color: yellow;
    text-decoration: underline;
 }
+
+li:hover {
+   text-decoration: underline;
+}
