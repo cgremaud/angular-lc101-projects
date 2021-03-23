@@ -1,13 +1,26 @@
 <div class="skills">
    <h3>{{listHeading}}</h3>
-   <ol>
-      <li *ngFor="let skill of skills">{{skill}}</li>
+   <ol [class.ol-style] = "changeColor">
+      <li [style.font-style] = 'italicsOn' *ngFor="let skill of skills">{{skill}}</li>
    </ol>
    <hr>
-   <h3>Copy of Skill List</h3>
+   <h3>Copy of skills list</h3>
    <ol [style.color]= "alternateColor" [type] = "bulletType">
-      <li *ngFor="let skill of skills">{{skill}}</li>
+      <li [style.text-decoration] = "underlineOn"  [style.color] = "alternateColor" *ngFor="let skill of skills">{{skill}}</li>
    </ol>
    <hr>
-   <p>Here is some practice text...</p>
+   <div *ngIf = 'addOtherList; else otherListA'> 
+      <ol [reversed] = 'true'>
+         <li *ngFor = "let item of otherList">{{item}}</li>
+      </ol>
+   </div>
+   <p [class.p-style] = "!changeColor" (mouseover) = "changeColor = !changeColor">Here is some practice text...</p>
 </div>
+
+<ng-template #otherListA>
+   <ol>
+      <li *ngFor = "let item of listA">{{item}}</li>
+   </ol>
+</ng-template>
+
+<!--structural directives: ngFor/ngIf: Change the STRUCTURE of the page by adding or removing elements. Attribute directives: [attribute] = "varName" are only modifying one attribute of the element not adding or removing new elements. Thus there can be multiple on one element. -->
